@@ -121,7 +121,8 @@ nav a {
 }
 
 nav a:hover,
-nav a:focus {
+nav a:focus,
+nav a.activo {
     background-color: var(--amarillo);
     color: var(--negro);
     font-weight: bold;
@@ -163,14 +164,17 @@ section:nth-child(odd) {
 }
 
 /* GALERÍA */
+.galeria,
 .galeria-contenedor {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 15px;
     justify-items: center;
+    text-align: center;
 }
 
-.imagen-seccion {
+.imagen-seccion,
+.galeria img {
     width: 100%;
     max-width: 320px;
     border-radius: 10px;
@@ -179,7 +183,8 @@ section:nth-child(odd) {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.imagen-seccion:hover {
+.imagen-seccion:hover,
+.galeria img:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
 }
@@ -193,6 +198,73 @@ section:nth-child(odd) {
     font-weight: bold;
 }
 
+/* ANIMACIÓN PARA SVG */
+#svg-logo svg text {
+    animation: brillar 2s ease-in-out infinite alternate;
+}
+
+@keyframes brillar {
+    from { fill: var(--verde); opacity: 0.7; }
+    to { fill: var(--morado); opacity: 1; }
+}
+
+/* FORMULARIO */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--fondo-claro);
+    padding: 1em;
+    border-radius: 10px;
+    border: 2px solid var(--verde);
+}
+
+label {
+    font-weight: bold;
+    color: var(--marron);
+}
+
+input, textarea, button {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+button {
+    background-color: var(--verde);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--morado);
+}
+
+/* TABLA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+th, td {
+    border: 1px solid var(--marron);
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--verde);
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
 /* FOOTER */
 footer {
     background-color: var(--marron);
@@ -200,6 +272,22 @@ footer {
     text-align: center;
     padding: 1em 0;
     font-size: 0.9em;
+}
+
+/* RESPONSIVE GENERAL */
+@media (max-width: 700px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    section {
+        width: 95%;
+        padding: 1.5em;
+    }
+
+    form {
+        padding: 0.8em;
+    }
 }
 
 /* HACK CSS: ajuste especial para Internet Explorer */
