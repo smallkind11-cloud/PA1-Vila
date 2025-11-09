@@ -1,119 +1,129 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Granja Vi. Ve. | Porcicultura y Asesoramiento</title>
-    <link rel="stylesheet" href="estilos.css">
-
-    <!-- Variable CSS añadida en el estilo interno -->
-    <style>
-        :root {
-            --color-principal: #e67300;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Granja Porcina Vi.Ve. - Cría, producción y mejoramiento genético porcino.">
+  <title>Granja Porcina Vi.Ve.</title>
+  <link rel="icon" href="img/logo.png" type="image/png">
+  <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
+  <!-- ENCABEZADO -->
+  <header>
+    <h1>Granja Porcina Vi.Ve.</h1>
+    <p>Producción y cuidado responsable</p>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="activo">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- PORTADA CON LOGO Y REDES SOCIALES -->
-    <div class="portada">
-        <img src="img/portada.png" alt="Portada Granja Vi. Ve." class="imagen-portada">
-        <!-- Overlay oscuro para resaltar el logo -->
-        <div class="overlay"></div>
-        <!-- Logo flotante -->
-        <img src="img/logo.png" alt="Logo Granja Vi. Ve." class="logo-flotante">
-        <!-- Redes sociales con nombres -->
-        <div class="social-icons">
-            <a href="https://www.facebook.com" target="_blank">Facebook</a>
-            <a href="https://www.instagram.com" target="_blank">Instagram</a>
-            <a href="https://wa.me/51971238123" target="_blank">WhatsApp</a>
-        </div>
+  <!-- PORTADA -->
+  <section class="portada">
+    <img src="img/portada.png" alt="Vista panorámica de la granja Vi.Ve." class="imagen-portada">
+    <div class="overlay"></div>
+    <img src="img/logo.png" alt="Logo de la Granja Vi.Ve." class="logo-flotante">
+
+    <div class="social-icons">
+      <a href="#">Facebook</a>
+      <a href="#">WhatsApp</a>
+      <a href="#">Correo</a>
     </div>
+  </section>
 
-    <!-- HEADER -->
-    <header>
-        <h1>Granja Vi. Ve.</h1>
-        <p>Especialistas en cría, asesoramiento y venta de cerdos</p>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#galeria">Galería</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- BIENVENIDA -->
+  <section>
+    <h2>Bienvenidos a Granja Vi.Ve.</h2>
+    <p>
+      Somos una granja dedicada a la <strong>porcicultura sostenible</strong>, brindando servicios de calidad en la cría,
+      venta y asesoramiento técnico sobre el manejo reproductivo de cerdos.
+    </p>
+    <figure>
+      <img src="img/campo.png" alt="Campo de la granja Vi.Ve." class="imagen-seccion">
+      <figcaption>Entorno natural donde crecen nuestros cerdos con bienestar y cuidado.</figcaption>
+    </figure>
+  </section>
 
-    <!-- CONTENIDO PRINCIPAL -->
-    <main>
-        <!-- INICIO -->
-        <section id="inicio">
-            <h2>Bienvenidos a Granja Vi. Ve.</h2>
-            <p>Somos una granja dedicada a la <strong>porcicultura sostenible</strong>, brindando servicios de calidad en la cría, venta y asesoramiento técnico sobre el manejo reproductivo de cerdos.</p>
-            <img src="img/Campo.png" alt="Instalaciones de la granja" class="imagen-seccion">
-        </section>
+  <!-- NOSOTROS -->
+  <section>
+    <h2>Quiénes somos</h2>
+    <p>
+      En la <strong>Granja Porcina Vi.Ve.</strong> nos especializamos en la producción y mejoramiento genético de porcinos.
+      Aplicamos prácticas sostenibles y cuidamos el bienestar animal en cada etapa del proceso.
+    </p>
+    <p>
+      Contamos con personal capacitado, ambientes limpios y tecnología moderna para garantizar productos de calidad.
+    </p>
+  </section>
 
-        <!-- NOSOTROS -->
-        <section id="nosotros">
-            <h2>Nosotros</h2>
-            <p>En <b>Granja Vi. Ve.</b> trabajamos con pasión y compromiso para ofrecer productos porcinos saludables y servicios confiables. 
-            Nuestra misión es contribuir al desarrollo de la porcicultura moderna, promoviendo el bienestar animal y la producción eficiente.</p>
+  <!-- SERVICIOS -->
+  <section>
+    <h2>Servicios</h2>
+    <ul>
+      <li>Cría y venta de lechones.</li>
+      <li>Asesoramiento técnico en manejo porcino.</li>
+      <li>Inseminación artificial controlada.</li>
+      <li>Venta de razas seleccionadas.</li>
+    </ul>
+  </section>
 
-            <ul>
-                <li><strong>Misión:</strong> Criar cerdos saludables con prácticas sostenibles.</li>
-                <li><strong>Visión:</strong> Ser una granja modelo en la región en producción y asesoría técnica.</li>
-                <li><strong>Valores:</strong> Responsabilidad, compromiso y calidad.</li>
-            </ul>
-        </section>
+  <!-- GALERÍA -->
+  <section>
+    <h2>Nuestra galería</h2>
+    <div class="galeria-contenedor">
+      <img src="img/lechoncitos1.png" alt="Lechones en corral" class="imagen-seccion">
+      <img src="img/lechoncitos2.png" alt="Crías sanas" class="imagen-seccion">
+      <img src="img/inseminacion.png" alt="Inseminación artificial" class="imagen-seccion">
+      <img src="img/duroc.png" alt="Raza Duroc" class="imagen-seccion">
+      <img src="img/hibridos.png" alt="Razas híbridas" class="imagen-seccion">
+      <img src="img/lechones.png" alt="Producción de cerdos" class="imagen-seccion">
+    </div>
+    <p class="mensaje-final">Comprometidos con la producción sostenible y el bienestar animal.</p>
+  </section>
 
-        <!-- SERVICIOS -->
-        <section id="servicios">
-            <h2>Servicios</h2>
-            <p>Ofrecemos una variedad de servicios especializados para porcicultores y clientes particulares:</p>
-            <ol>
-                <li>Venta de lechones y cerdos de engorde.</li>
-                <li>Asesoramiento técnico en manejo y nutrición.</li>
-                <li>Servicio de inseminación artificial porcina.</li>
-                <li>Capacitaciones y visitas guiadas a la granja.</li>
-            </ol>
-        </section>
+  <!-- INSTALACIONES (con dos imágenes) -->
+  <section>
+    <h2>Conoce nuestras instalaciones</h2>
+    <div class="galeria-contenedor">
+      <figure>
+        <img src="img/instalacion.png" alt="Instalaciones principales de la granja Vi.Ve." class="imagen-seccion">
+        <figcaption>Instalaciones amplias y limpias, diseñadas para el confort de los animales.</figcaption>
+      </figure>
 
-        <!-- GALERÍA -->
-        <section id="galeria">
-            <h2>Galería</h2>
-            <p>Algunas imágenes de nuestro trabajo diario:</p>
-            <div class="galeria-contenedor">
-                <img src="img/lechones.png" alt="Lechones recién nacidos" class="imagen-seccion">
-                <img src="img/inseminacion.png" alt="Inseminación artificial porcina" class="imagen-seccion">
-                <img src="img/lechoncitos1.png" alt="Lechoncitos alimentándose" class="imagen-seccion">
-                <img src="img/lechoncitos2.png" alt="Lechoncitos descansando" class="imagen-seccion">
-                <img src="img/hibridos.png" alt="Cerdos híbridos en crecimiento" class="imagen-seccion">
-                <img src="img/duroc.png" alt="Ejemplar de cerdo Duroc" class="imagen-seccion">
-            </div>
-            <p class="mensaje-final">
-                Todas nuestras prácticas se realizan bajo estándares de bienestar animal, calidad genética y sostenibilidad.
-            </p>
-        </section>
+      <figure>
+        <img src="img/granjadelcampo.jpg" alt="granjadelcampo" class="imagen-seccion">
+        <figcaption>Vista general de la granja del campo Vi.Ve., rodeada de naturaleza.</figcaption>
+      </figure>
+    </div>
+  </section>
 
-        <!-- CONTACTO -->
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <address>
-                📍 Pichanaqui, Chanchamayo, Junín – Perú <br>
-                📞 Teléfono: <a href="tel:+51971238123">+51 971 238 123</a> <br>
-                📧 Email: <a href="mailto:affari@vive.com">affari@vive.com</a> <br>
-                🌐 Página web: <a href="https://granjavive.com" target="_blank">granjavive.com</a>
-            </address>
-        </section>
-    </main>
+  <!-- SVG -->
+  <section id="svg-logo">
+    <h2>Nuestro sello</h2>
+    <svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
+      <text x="10" y="60" font-size="40" fill="#4CAF50">
+        Vi.<tspan fill="#222">Ve.</tspan>
+      </text>
+    </svg>
+  </section>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2025 Granja Vi. Ve. | Todos los derechos reservados.</p>
-    </footer>
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>📍 Pichanaqui, Chanchamayo, Junín – Perú</p>
+    <p>📞 Teléfono: +51 971 238 123</p>
+    <p>📧 Email: <a href="mailto:affari@vive.com">affari@vive.com</a></p>
+    <p>🌐 Página web: <a href="https://granjavive.com" target="_blank" rel="noopener">granjavive.com</a></p>
+  </section>
 
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>© 2025 Granja Porcina Vi.Ve. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
-
-
