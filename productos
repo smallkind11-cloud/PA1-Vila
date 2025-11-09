@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos - Granja Porcina Vi.Ve.</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="icon" href="img/logo.png" type="image/png">
+</head>
+<body>
+  <header>
+    <h1>Granja Porcina Vi.Ve.</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html" class="activo">Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Nuestros productos y servicios</h2>
+    <p>
+      En la <strong>Granja Porcina Vi.Ve.</strong> ofrecemos una amplia gama de productos y servicios dedicados al
+      desarrollo de la porcicultura sostenible. Cuidamos cada detalle desde la selección genética hasta la
+      alimentación y salud de los animales.
+    </p>
+  </section>
+
+  <section>
+    <h2>Galería de productos</h2>
+    <div class="galeria-contenedor">
+      <figure>
+        <img src="img/lechoncitos1.png" alt="Lechones en corral" class="imagen-seccion">
+        <figcaption>Lechones recién destetados listos para la venta.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="img/lechoncitos2.png" alt="Crías saludables" class="imagen-seccion">
+        <figcaption>Crías saludables y con genética mejorada.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="img/inseminacion.png" alt="Inseminación controlada" class="imagen-seccion">
+        <figcaption>Servicio técnico de inseminación artificial con razas puras.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="img/duroc.png" alt="Raza Duroc" class="imagen-seccion">
+        <figcaption>Raza Duroc: carne de excelente calidad y sabor.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="img/hibridos.png" alt="Cerdos híbridos" class="imagen-seccion">
+        <figcaption>Híbridos seleccionados para mejor rendimiento y resistencia.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="img/lechones.png" alt="Venta de lechones" class="imagen-seccion">
+        <figcaption>Lechones listos para granjas familiares y productores locales.</figcaption>
+      </figure>
+    </div>
+    <p class="mensaje-final">Producción responsable, sostenible y con compromiso hacia el bienestar animal.</p>
+  </section>
+
+  <section>
+    <h2>Servicios adicionales</h2>
+    <ul>
+      <li>Venta de razas seleccionadas (Duroc, Yorkshire, Landrace).</li>
+      <li>Asesoramiento en manejo y reproducción.</li>
+      <li>Capacitaciones en técnicas de inseminación.</li>
+      <li>Entrega personalizada a clientes locales.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 Granja Porcina Vi.Ve. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
