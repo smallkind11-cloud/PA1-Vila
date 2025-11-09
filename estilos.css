@@ -1,298 +1,129 @@
-/* VARIABLES CSS */
-:root {
-    --verde: #4CAF50;
-    --morado: #7B1FA2;
-    --naranja: #FF9800;
-    --amarillo: #FFEB3B;
-    --marron: #8B4513;
-    --negro: #000000;
-    --fondo-claro: #f9f9f9;
-    --texto: #333333;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Granja Porcina Vi.Ve. - Cría, producción y mejoramiento genético porcino.">
+  <title>Granja Porcina Vi.Ve.</title>
+  <link rel="icon" href="img/logo.png" type="image/png">
+  <link rel="stylesheet" href="estilos.css">
+</head>
 
-/* ESTILOS GENERALES */
-body {
-    font-family: Arial, sans-serif;
-    background-color: var(--fondo-claro);
-    color: var(--texto);
-    margin: 0;
-    padding: 0;
-}
+<body>
+  <!-- ENCABEZADO -->
+  <header>
+    <h1>Granja Porcina Vi.Ve.</h1>
+    <p>Producción y cuidado responsable</p>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="activo">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-/* --- PORTADA CON OVERLAY OSCURO --- */
-.portada {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-}
+  <!-- PORTADA -->
+  <section class="portada">
+    <img src="img/portada.png" alt="Vista panorámica de la granja Vi.Ve." class="imagen-portada">
+    <div class="overlay"></div>
+    <img src="img/logo.png" alt="Logo de la Granja Vi.Ve." class="logo-flotante">
 
-.imagen-portada {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+    <div class="social-icons">
+      <a href="#">Facebook</a>
+      <a href="#">WhatsApp</a>
+      <a href="#">Correo</a>
+    </div>
+  </section>
 
-/* Overlay oscuro */
-.portada .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.4);
-    z-index: 5;
-}
+  <!-- BIENVENIDA -->
+  <section>
+    <h2>Bienvenidos a Granja Vi.Ve.</h2>
+    <p>
+      Somos una granja dedicada a la <strong>porcicultura sostenible</strong>, brindando servicios de calidad en la cría,
+      venta y asesoramiento técnico sobre el manejo reproductivo de cerdos.
+    </p>
+    <figure>
+      <img src="img/campo.png" alt="Campo de la granja Vi.Ve." class="imagen-seccion">
+      <figcaption>Entorno natural donde crecen nuestros cerdos con bienestar y cuidado.</figcaption>
+    </figure>
+  </section>
 
-/* LOGO FLOTANTE */
-.logo-flotante {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 120px;
-    z-index: 10;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-}
+  <!-- NOSOTROS -->
+  <section>
+    <h2>Quiénes somos</h2>
+    <p>
+      En la <strong>Granja Porcina Vi.Ve.</strong> nos especializamos en la producción y mejoramiento genético de porcinos.
+      Aplicamos prácticas sostenibles y cuidamos el bienestar animal en cada etapa del proceso.
+    </p>
+    <p>
+      Contamos con personal capacitado, ambientes limpios y tecnología moderna para garantizar productos de calidad.
+    </p>
+  </section>
 
-/* REDES SOCIALES EN TEXTO */
-.social-icons {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    display: flex;
-    gap: 15px;
-    z-index: 10;
-}
+  <!-- SERVICIOS -->
+  <section>
+    <h2>Servicios</h2>
+    <ul>
+      <li>Cría y venta de lechones.</li>
+      <li>Asesoramiento técnico en manejo porcino.</li>
+      <li>Inseminación artificial controlada.</li>
+      <li>Venta de razas seleccionadas.</li>
+    </ul>
+  </section>
 
-.social-icons a {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 8px 12px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
+  <!-- GALERÍA -->
+  <section>
+    <h2>Nuestra galería</h2>
+    <div class="galeria-contenedor">
+      <img src="img/lechoncitos1.png" alt="Lechones en corral" class="imagen-seccion">
+      <img src="img/lechoncitos2.png" alt="Crías sanas" class="imagen-seccion">
+      <img src="img/inseminacion.png" alt="Inseminación artificial" class="imagen-seccion">
+      <img src="img/duroc.png" alt="Raza Duroc" class="imagen-seccion">
+      <img src="img/hibridos.png" alt="Razas híbridas" class="imagen-seccion">
+      <img src="img/lechones.png" alt="Producción de cerdos" class="imagen-seccion">
+    </div>
+    <p class="mensaje-final">Comprometidos con la producción sostenible y el bienestar animal.</p>
+  </section>
 
-.social-icons a:hover {
-    background-color: var(--amarillo);
-    color: var(--negro);
-    transform: scale(1.05);
-}
+  <!-- INSTALACIONES (con dos imágenes) -->
+  <section>
+    <h2>Conoce nuestras instalaciones</h2>
+    <div class="galeria-contenedor">
+      <figure>
+        <img src="img/instalacion.png" alt="Instalaciones principales de la granja Vi.Ve." class="imagen-seccion">
+        <figcaption>Instalaciones amplias y limpias, diseñadas para el confort de los animales.</figcaption>
+      </figure>
 
-/* HEADER */
-header {
-    background-color: var(--verde);
-    color: white;
-    text-align: center;
-    padding: 1.5em 0;
-}
+      <figure>
+        <img src="img/granjadelcampo.jpg" alt="granjadelcampo" class="imagen-seccion">
+        <figcaption>Vista general de la granja del campo Vi.Ve., rodeada de naturaleza.</figcaption>
+      </figure>
+    </div>
+  </section>
 
-header h1 {
-    margin: 10px 0 5px 0;
-}
+  <!-- SVG -->
+  <section id="svg-logo">
+    <h2>Nuestro sello</h2>
+    <svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
+      <text x="10" y="60" font-size="40" fill="#4CAF50">
+        Vi.<tspan fill="#222">Ve.</tspan>
+      </text>
+    </svg>
+  </section>
 
-header p {
-    margin: 0 0 10px 0;
-}
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>📍 Pichanaqui, Chanchamayo, Junín – Perú</p>
+    <p>📞 Teléfono: +51 971 238 123</p>
+    <p>📧 Email: <a href="mailto:affari@vive.com">affari@vive.com</a></p>
+    <p>🌐 Página web: <a href="https://granjavive.com" target="_blank" rel="noopener">granjavive.com</a></p>
+  </section>
 
-/* NAV */
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    background-color: var(--marron);
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-nav li {
-    display: inline-block;
-}
-
-nav a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 14px 20px;
-    transition: all 0.3s ease;
-}
-
-nav a:hover,
-nav a:focus,
-nav a.activo {
-    background-color: var(--amarillo);
-    color: var(--negro);
-    font-weight: bold;
-}
-
-/* SECCIONES */
-section {
-    padding: 2em;
-    margin: 1em auto;
-    width: 90%;
-    max-width: 1000px;
-    background-color: white;
-    border-radius: 10px;
-    border: 2px solid var(--verde);
-    opacity: 0;
-    transform: translateY(20px);
-    animation: aparecer 0.8s ease-out forwards;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-@keyframes aparecer {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-h1, h2 {
-    color: var(--morado);
-}
-
-/* Selectores avanzados */
-section:nth-child(even) {
-    border-color: var(--naranja);
-}
-
-section:nth-child(odd) {
-    border-color: var(--verde);
-}
-
-/* GALERÍA */
-.galeria,
-.galeria-contenedor {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 15px;
-    justify-items: center;
-    text-align: center;
-}
-
-.imagen-seccion,
-.galeria img {
-    width: 100%;
-    max-width: 320px;
-    border-radius: 10px;
-    border: 2px solid var(--verde);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.imagen-seccion:hover,
-.galeria img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
-}
-
-/* MENSAJE FINAL EN GALERÍA */
-.mensaje-final {
-    text-align: center;
-    font-style: italic;
-    color: var(--marron);
-    margin-top: 20px;
-    font-weight: bold;
-}
-
-/* ANIMACIÓN PARA SVG */
-#svg-logo svg text {
-    animation: brillar 2s ease-in-out infinite alternate;
-}
-
-@keyframes brillar {
-    from { fill: var(--verde); opacity: 0.7; }
-    to { fill: var(--morado); opacity: 1; }
-}
-
-/* FORMULARIO */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background-color: var(--fondo-claro);
-    padding: 1em;
-    border-radius: 10px;
-    border: 2px solid var(--verde);
-}
-
-label {
-    font-weight: bold;
-    color: var(--marron);
-}
-
-input, textarea, button {
-    padding: 10px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    font-size: 1em;
-}
-
-button {
-    background-color: var(--verde);
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: var(--morado);
-}
-
-/* TABLA */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1em;
-}
-
-th, td {
-    border: 1px solid var(--marron);
-    padding: 10px;
-    text-align: left;
-}
-
-th {
-    background-color: var(--verde);
-    color: white;
-}
-
-tr:nth-child(even) {
-    background-color: #f1f1f1;
-}
-
-/* FOOTER */
-footer {
-    background-color: var(--marron);
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-    font-size: 0.9em;
-}
-
-/* RESPONSIVE GENERAL */
-@media (max-width: 700px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    section {
-        width: 95%;
-        padding: 1.5em;
-    }
-
-    form {
-        padding: 0.8em;
-    }
-}
-
-/* HACK CSS: ajuste especial para Internet Explorer */
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    header {
-        background-color: #5cb85c;
-    }
-}
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>© 2025 Granja Porcina Vi.Ve. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
